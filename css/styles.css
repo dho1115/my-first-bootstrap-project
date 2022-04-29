@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
+
+body {
+    font-family: "Open Sans" sans-serif;
+}
+
+footer {
+    background-image: linear-gradient(#cec8ff, white);
+    padding: 15px 0;
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: magenta;
+}
+
+header h2 {
+    color: yellow;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: url('https://mongabay-images.s3.amazonaws.com/rainforests/photos/amazon_200260-960.webp');
+    background-size: cover;
+}
+
+.row-content {
+    padding: 50 0;
+    border-bottom: 1px ridge;
+}
