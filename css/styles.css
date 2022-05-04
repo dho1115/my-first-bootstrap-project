@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
 
+.active {
+  color: red;
+  font-weight: bolder;
+}
+
 body {
     font-family: "Open Sans" sans-serif;
 }
@@ -34,6 +39,10 @@ h2 {
     color: magenta;
 }
 
+.navbar {
+  background-color: black;
+}
+
 header h2 {
     color: yellow;
 }
@@ -42,6 +51,7 @@ header h2 {
     padding: 30px;
     background-image: url('https://mongabay-images.s3.amazonaws.com/rainforests/photos/amazon_200260-960.webp');
     background-size: cover;
+    margin: 0;
 }
 
 .row-content {
