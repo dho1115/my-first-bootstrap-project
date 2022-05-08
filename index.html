@@ -28,6 +28,9 @@
                     <h1 class=>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" class="btn btn-lg btn-info btn-outline-danger text-dark">RESERVE A CAMPSITE!!!</a>
+                </div>
             </div>
         </div>
     </header>
@@ -63,15 +66,15 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center" style="background-color: pink;">
-            <div class="col col-sm-4 col-md-3">
+        <div class="row row-content align-items-center media" style="background-color: pink;">
+            <div class="col col-sm-4 col-md-3 media-body">
                 <h2>Featured Campsites</h2>
             </div>
-            <div class="col">
+            <div class="col media-body">
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
             </div>
-            <!-- <img src="./img/reactLake.png" class="img-fluid" alt="React Lake Image" /> -->
+            <img src="./img/react-lake-thumb.jpg" class="img-thumbnail d-flex" alt="React Lake Image" />
         </div>
     
         <div class="row row-content align-items-center" style="background-color: lightslategray;">
@@ -83,9 +86,53 @@
                 <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
             </div>
         </div>
+
+        <div class="row row-content" style="background-color: whitesmoke;">
+            <div class="col-sm-8 mx-auto" style="background-color: lightseagreen;">
+                <div class="card">
+                    <h3 class="card-title bg-info text-center text-light" style="font-family: Arial, Helvetica, sans-serif;">RESERVE A CAMPSITE</h3>
+                    <div class="card-body bg-warning">
+
+                        <!-- START FORM -->
+                        <form id="reserveForm" action="">
+                            <div class="row form-group">
+                                <div class="col-sm-6 col-12">
+                                    <label for="" class="col-form-label small" id="campers">Number of Campers.</label>
+                                </div>                                
+                                <div class="col-sm-6 col-12">
+                                    <select name="numCampers" id="numCampers" class="custom-select">
+                                        <option selected class="text-left"><p class="small">SELECT</p></option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>                                
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-12 col-sm-6">
+                                    <label for="date" class="col-form-label">Date</label>
+                                </div>
+                                <div class="col-sm-6 col-sm-6">
+                                    <input type="date" name="date" id="date" placeholder="date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-info" type="submit">SEARCH</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END FORM -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <footer style="position: relative;" class="mt-1">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
