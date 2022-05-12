@@ -29,7 +29,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" class="btn btn-lg btn-info btn-outline-danger text-dark">RESERVE A CAMPSITE!!!</a>
+                    <a href="#reserveForm" class="btn btn-lg btn-info btn-outline-danger text-dark" data-html="true" data-placement="bottom" data-toggle="tooltip" title="<div style='background-color: whitesmoke'><h5>RESERVE A CAMPSITE BELOW ON THIS PAGE!!!</h5></div>">RESERVE A CAMPSITE!!!</a>
                 </div>
             </div>
         </div>
@@ -163,6 +163,12 @@
     <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
