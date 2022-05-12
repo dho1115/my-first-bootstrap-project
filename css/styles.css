@@ -22,29 +22,6 @@ img:hover {
   height: auto;
   border: 3px solid maroon;
 }
-  
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-footer {
-    background-image: linear-gradient(#cec8ff, white);
-    padding: 15px 0;
-}
-
-h1, h2, h3 {
-    font-family: "Lobster", cursive;
-}
-
-h2 {
-    color: magenta;
-}
 
 .navbar {
   background-color: black;
@@ -52,6 +29,19 @@ h2 {
 
 header h2 {
     color: yellow;
+}
+
+footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 15px 0;
+}
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive;
+}
+
+h2 {
+  color: magenta;
 }
 
 .jumbotron {
@@ -64,5 +54,25 @@ header h2 {
 .row-content {
     padding: 50 0;
     border-bottom: 1px ridge;
-    min-height: 275px;
+    min-height: 175px;
 }
+
+.tab-content {
+  border: 3px solid magenta;
+  border-top: none;
+  background-color: lightgray;
+  padding: 15px
+}
+  
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
