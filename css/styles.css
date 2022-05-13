@@ -9,6 +9,11 @@ body {
     font-family: "Open Sans" sans-serif;
 }
 
+.carousel {
+  border: 3px solid maroon;
+  margin-top: 1%;
+}
+
 .glow {
     font-size: 35px;
     color: #fff;
