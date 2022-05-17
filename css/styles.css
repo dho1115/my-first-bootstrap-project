@@ -1,90 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap");
 .active {
   color: red;
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 body {
-    font-family: "Open Sans" sans-serif;
-}
+  font-family: "Open Sans" sans-serif; }
 
 .carousel {
   border: 3px solid maroon;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .glow {
-    font-size: 35px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate; }
 
 img:hover {
   width: 25%;
   height: auto;
-  border: 3px solid maroon;
-}
+  border: 3px solid maroon; }
 
 .navbar {
-  background-color: black;
-}
+  background-color: black; }
 
 header h2 {
-    color: yellow;
-}
+  color: #b1a5e7; }
 
 footer {
   background-image: linear-gradient(#cec8ff, white);
-  padding: 15px 0;
-}
+  padding: 15px 0; }
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive;
-}
+  font-family: "Lobster", cursive; }
 
 h2 {
-  color: magenta;
-}
+  color: magenta; }
 
 .jumbotron {
-    padding: 30px;
-    background-image: url('https://mongabay-images.s3.amazonaws.com/rainforests/photos/amazon_200260-960.webp');
-    background-size: cover;
-    margin: 0;
-}
+  padding: 30px;
+  background-image: url("https://mongabay-images.s3.amazonaws.com/rainforests/photos/amazon_200260-960.webp");
+  background-size: cover;
+  margin: 0; }
 
 .row-content {
-    padding: 50 0;
-    border-bottom: 1px ridge;
-    min-height: 175px;
-}
+  padding: 50 0;
+  border-bottom: 1px ridge;
+  min-height: 175px; }
 
 .tab-content {
   border: 3px solid magenta;
   border-top: none;
   background-color: lightgray;
-  padding: 15px
-}
-  
+  padding: 15px; }
+
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-
-
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; } }
