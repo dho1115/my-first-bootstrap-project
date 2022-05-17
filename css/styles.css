@@ -14,6 +14,13 @@ body {
   margin: 1%;
 }
 
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
 .glow {
     font-size: 35px;
     color: #fff;

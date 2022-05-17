@@ -208,10 +208,10 @@
                         </div>
                         <!--START -->
                         <div class="carousel-item">
-                            <img src="./img/Yellow_Ribbon_Image_5.jpg" alt="image 3" width="100%" style="min-width: 100%; height: auto;">
-                            <div class="carousel-caption bg-white">
-                                <h3 class="text-danger">CREEPY CAMP COUNSELLOR</h3>
-                                <p class="d-none d-sm-block text-danger">Camp counsellor JANE is dying to meet you!!!</p>
+                            <img src="./img/chrome-river.jpg" alt="image 3" class="d-block w-100">
+                            <div class="carousel-caption bg-dark">
+                                <h3>CHROME RIVER </h3>
+                                <p class="d-none d-sm-block">IMAGE OF CHROME RIVER</p>
                             </div>
                         </div>
                         <!--END-->
@@ -224,6 +224,17 @@
                         <span class="carousel-control-next-icon" style="color: white; background-color: black; padding: 3px;"></span>
                         <span class="sr-only">NEXT</span>
                     </a>
+
+                    <!-- START CAROUSEL PAUSE/PLAY BUTTONS -->
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-sm btn-danger" id="carouselPause"> 
+                            <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger" id="carouselPlay">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
+                    <!-- END CAROUSEL PAUSE/PLAY BUTTONS -->
                 </div>
             </div>
         </div>
@@ -349,11 +360,17 @@
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- <script>
+    <script>
         $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+            $(".carousel").carousel({interval: 5700});
+            $("#carouselPause").click(function() {
+                $(".carousel").carousel("pause");
+            })
+            $("#carouselPlay").click(function() {
+                $(".carousel").carousel("cycle")
+            })
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
