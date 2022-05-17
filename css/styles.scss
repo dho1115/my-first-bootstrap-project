@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
+
+$color-primary: purple;
+$color-secodary: #5637dd;
+$color-pale: lightslategray;
+$color-mid: #b1a5e7;
+$color-dark: black;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans" sans-serif;
+$header-font: "Lobster", cursive;
+
+.active {
+  color: red;
+  font-weight: bolder;
+}
+
+body {
+    font-family: $body-font;
+}
+
+.carousel {
+  border: 3px solid maroon;
+  margin: 1%;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.glow {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+img:hover {
+  width: 25%;
+  height: auto;
+  border: 3px solid maroon;
+}
+
+.navbar {
+  background-color: black;
+}
+
+header {
+    h2 {
+      color: $color-mid 
+    }
+}
+
+footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 15px 0;
+}
+
+h1, h2, h3 {
+  font-family: $header-font;
+}
+
+h2 {
+  color: magenta;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: url('https://mongabay-images.s3.amazonaws.com/rainforests/photos/amazon_200260-960.webp');
+    background-size: cover;
+    margin: 0;
+}
+
+.row-content {
+    padding: 50 0;
+    border-bottom: 1px ridge;
+    min-height: 175px;
+}
+
+.tab-content {
+  border: 3px solid magenta;
+  border-top: none;
+  background-color: lightgray;
+  padding: 15px
+}
+  
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+

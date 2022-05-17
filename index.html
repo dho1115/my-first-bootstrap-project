@@ -120,9 +120,6 @@
             
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav"> 
-                    <!-- Causes the navbar-nav causes the navbar to expand horizontally for small and up viewports.
-                    nav-link adds spaces between the <li></li>
-                    inside <nav></nav> navbar-expand-sm causes the this <div></div> to collapse into the 3 lines when it is small.-->
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg" style="color: bisque"></i> HOME.</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-list fa-lg" style="color: salmon"></i>ABOUT.</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg" style="color: khaki"></i>SITES.</a></li>
@@ -241,17 +238,6 @@
             </div>
             <img src="./img/breadcrumb-trail-thumb.jpg" class="img-thumbnail d-flex order-sm-first ml-auto" alt="breadcrumb trail thumb" />
         </div>
-
-        <!-- <div class="row row-content align-items-center media">
-            <div class="col col-sm-4 col-md-3 media-body">
-                <h2>Featured Campsites</h2>
-            </div>
-            <div class="col media-body">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-            </div>
-            <img src="./img/react-lake-thumb.jpg" class="img-thumbnail d-flex" alt="React Lake Image" />
-        </div> -->
         
         <div class="row row-content align-items-center media">
             <div class="col col-sm-4 col-md-3 media-body">
@@ -274,52 +260,6 @@
             </div>
             <img src="./img/chrome-river-thumb.jpg" alt="chrome-river-thumb" class="img-thumbnail d-flex order-sm-first">
         </div>
-
-        <!-- START RESERVATION FORM -->
-        <!-- <div class="row row-content">
-            <div class="col-sm-8 mx-auto align-self-center">
-                <div class="card">
-                    <h3 class="card-title bg-info text-center text-light p-0 m-0" style="font-family: Arial, Helvetica, sans-serif;">RESERVE A CAMPSITE</h3>
-                    <div class="card-body bg-warning">                        
-                        <form id="reserveForm" action="">
-                            
-                            <div class="row form-group">
-                                <div class="col-sm-6 col-12">
-                                    <label for="" class="col-form-label small" id="campers">Number of Campers.</label>
-                                </div>                                
-                                <div class="col-sm-6 col-12">
-                                    <select name="numCampers" id="numCampers" class="custom-select">
-                                        <option selected class="text-left"><p class="small">SELECT</p></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>                             
-                            </div>                         
-                            
-                            <div class="row form-group">
-                                <div class="col-12 col-sm-6">
-                                    <label for="date" class="col-form-label">Date</label>
-                                </div>
-                                <div class="col-sm-6 col-sm-6">
-                                    <input type="date" name="date" id="date" placeholder="date">
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-info" type="submit">SEARCH</button>
-                                </div>
-                            </div>
-                        </form>
-                        
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <footer style="position: relative;" class="mt-1">
@@ -354,12 +294,18 @@
 
     <script>
         $(function() {
-            $(".carousel").carousel({interval: 5700});
-            $("#carouselPause").click(function() {
-                $(".carousel").carousel("pause");
-            })
-            $("#carouselPlay").click(function() {
-                $(".carousel").carousel("cycle")
+            $(".carousel").carousel({interval: 1500});
+            $("#carouselButton").click(function() {
+                //Code for toggling.
+                if($('#carouselButton').children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
             })
         });
     </script>
