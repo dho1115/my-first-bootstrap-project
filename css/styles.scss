@@ -6,6 +6,8 @@ $color-pale: lightslategray;
 $color-mid: #b1a5e7;
 $color-dark: black;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17A2B8;
+$color-white: whitesmoke;
 
 $body-font: "Open Sans" sans-serif;
 $header-font: "Lobster", cursive;
@@ -86,6 +88,23 @@ h2 {
   border-top: none;
   background-color: lightgray;
   padding: 15px
+}
+
+// Task 3
+#loginModal {
+  .modal-header {
+    background-color: $color-mid;
+    color: $color-white;
+  }
+}
+
+#reserveModal {
+  .modal-header {
+    background-color: $color-teal;
+      .modal-title {
+        color: $color-white;
+      }
+  }
 }
   
 @-webkit-keyframes glow {

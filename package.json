@@ -4,6 +4,8 @@
   "description": "This is my Nucamp site.",
   "main": "index.html",
   "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "imagemin": "imagemin img/* -o dist/img",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
@@ -29,6 +31,7 @@
     "lite-server": "^2.6.1",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
     "sass": "^1.51.0",
     "usemin-cli": "^0.6.0"
   }

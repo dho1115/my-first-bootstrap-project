@@ -41,8 +41,7 @@
                 <div class="col col-md-4 col-xl-2 mt-4">
                     <a  
                         class="btn btn-lg btn-info btn-outline-danger text-dark"
-                        data-toggle="modal"
-                        data-target="#reserveModal" 
+                        id="reserveButton"
                         role="button"
                     >RESERVE A CAMPSITE!!!</a>
                 </div>
@@ -51,11 +50,11 @@
     </header>
 
     <!-- START WEEK 3 PROJECT RESERVATION FORM MODAL-->    
-    <div class="modal fade" id="reserveModal" role="dialog">
+    <div class="fade modal" id="reserveModal" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-header">
-                    <h1 class="modal-title text-white" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;">RESERVE A CAMPSITE!!!</h1>
+                <div class="modal-header text-header"> <!--bg-info-->
+                    <h1 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;">RESERVE A CAMPSITE!!!</h1> <!--text-white-->
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
@@ -130,7 +129,7 @@
 
                 <!-- START BUTTON TO ACTIVATE MODAL -->
                 <span class="navbar-text ml-auto">
-                    <a href="" role="button" data-target="#loginModal" data-toggle="modal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> USER LOGIN HERE.
                     </a>
                 </span>
@@ -139,7 +138,7 @@
             </div>
         </div>
     </nav>
-    <!-- THE MODAL (START MODAL) -->
+    <!-- THE MODAL (START LOGIN MODAL) -->
     <div class="modal fade" id="loginModal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -179,7 +178,7 @@
             </div>
         </div>
     </div>
-    <!-- END THE MODAL (END MODAL) -->
+    <!-- END THE MODAL (END LOGIN MODAL) -->
 
     <div class="container">
         <div class="row row-content">
